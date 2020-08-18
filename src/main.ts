@@ -1,7 +1,7 @@
 import { Db, Get } from "./decorator/server";
 import { ServerResponse } from "http";
 
-// @Db()
+@Db()
 class Main {
   @Get("/")
   ha(req, res: ServerResponse) {
