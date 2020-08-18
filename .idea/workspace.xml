@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50259ca6-0970-4dc0-be01-b64ae898ee92" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1fw83mvVjJ9G9kUWSR54mqQpTck" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="/usr/local/lib/node_modules/ts-node/dist/bin.js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RunManager" selected="Node.js.main.ts">
+    <configuration default="true" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.ts" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js" nameIsGenerated="true" path-to-js-file="src/main.ts" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.ts" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js" nameIsGenerated="true" path-to-js-file="src/test.ts" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.test.ts" />
+      <item itemvalue="Node.js.main.ts" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50259ca6-0970-4dc0-be01-b64ae898ee92" name="默认更改列表" comment="" />
+      <created>1597117598066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597117598066</updated>
+      <workItem from="1597117599180" duration="1446000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="169" key="#TypeScript" timestamp="1597117642796">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="687" y="169" key="#TypeScript/0.0.1920.1080@0.0.1920.1080" timestamp="1597117642796" />
+    <state x="423" y="201" width="1115" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597125576466">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="423" y="201" width="1115" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597125576466" />
+    <state x="746" y="301" key="FileChooserDialogImpl" timestamp="1597125342423">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="746" y="301" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1597125342423" />
+    <state width="1874" height="304" key="GridCell.Tab.0.bottom" timestamp="1597125580224">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597125580224" />
+    <state width="1874" height="304" key="GridCell.Tab.0.center" timestamp="1597125580223">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597125580223" />
+    <state width="1874" height="304" key="GridCell.Tab.0.left" timestamp="1597125580222">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597125580222" />
+    <state width="1874" height="304" key="GridCell.Tab.0.right" timestamp="1597125580223">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597125580223" />
+  </component>
+</project>
