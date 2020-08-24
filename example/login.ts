@@ -1,5 +1,4 @@
-import { ServerResponse } from "http";
-import { Get, Route } from "../src/decorator/httpMethord";
+import {Get, Route} from "../src/decorator/httpMethord";
 
 @Route()
 export default class Login {
@@ -7,7 +6,7 @@ export default class Login {
     console.log(props);
   }
 
-  confirm(req, res: ServerResponse) {
-    res.write("login is ok!");
+  confirm() {
+    return 'login is ok!'
   }
 }

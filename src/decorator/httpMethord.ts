@@ -1,7 +1,7 @@
 import main from "../main";
-import { ServerResponse } from "http";
+import {ServerResponse} from "http";
 
-const { M_Router } = main;
+const {M_Router} = main;
 
 export function Get(path: string) {
   return (cons: any, name: string) => {
@@ -23,12 +23,10 @@ export function Get(path: string) {
  */
 export function Route(path?: string) {
   return <T extends { new(...ares: any[]): {} }>(constructor: T) => {
-    let { name } = constructor;
+    let {name} = constructor;
     name = path ? path : name;
     if (!M_Router.has(`/${name}`)) {
-      M_Router.set(`/${name}`, (req, res: ServerResponse) => {
-        res.write(name);
-      });
+      M_Router.set(`/${name}`, () => name);
     }
   };
 }
