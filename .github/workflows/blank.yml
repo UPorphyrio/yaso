@@ -6,9 +6,18 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [  wyswill_dev ]
+    branches:
+      - master
+      - wyswill_dev
+  pull_request:
+    branches:
+      - master
+      - wyswill_dev
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  contains:
+    image: node:12
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -20,7 +29,7 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run Build Test
+    - name: run test
       run: |
         npm install
         npm run-script dev
