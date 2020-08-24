@@ -7,9 +7,8 @@ function methodRegister(cons: any, path: string, name: string, method: 'get' | '
   path = `/${className}${path}`;
   if (M_Router.has(path)) {
     const item = M_Router.get(path)
-    item.get = cons[name];
+    item[method] = cons[name];
     M_Router.set(path, item);
-    M_Router.set(path, cons[name])
   } else M_Router.set(path, {[method]: cons[name]}); //拿到对应路由的实体方法
   console.log(M_Router);
 }
@@ -35,8 +34,7 @@ export function Route(path?: string) {
   return <T extends { new(...ares: any[]): {} }>(constructor: T) => {
     let {name} = constructor;
     name = path ? path : name;
-    if (!M_Router.has(`/${name}`)) {
-      M_Router.set(`/${name}`, {get: () => name, post: () => name});
-    }
+    M_Router.set(`/${name}/`, {get: () => name, post: () => name});
+    console.log(M_Router);
   };
 }

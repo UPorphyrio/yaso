@@ -4,23 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon example/main.ts"
+    "dev": "nodemon src/example/main.ts"
   },
   "keywords": [],
   "author": "wyswill",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      "last 1 ie version"
-    ]
-  },
   "devDependencies": {
     "@types/node": "^14.0.27"
   },

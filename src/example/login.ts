@@ -1,4 +1,4 @@
-import {Get, Route} from "../src/decorator/httpMethord";
+import {Get, Route} from "../decorator/httpMethord";
 
 @Route()
 export default class Login {
