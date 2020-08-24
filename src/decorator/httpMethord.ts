@@ -23,7 +23,8 @@ export function Get(path: string) {
  */
 export function Route(path?: string) {
   return <T extends { new(...ares: any[]): {} }>(constructor: T) => {
-    const { name } = constructor;
+    let { name } = constructor;
+    name = path ? path : name;
     if (!M_Router.has(`/${name}`)) {
       M_Router.set(`/${name}`, (req, res: ServerResponse) => {
         res.write(name);

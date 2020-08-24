@@ -2,8 +2,6 @@ import http, { IncomingMessage, Server, ServerResponse } from "http";
 import url from "url";
 
 const M_Router = new Map<string, Function>();
-
-
 export const _server: Server = http.createServer();
 _server.listen(3000, () => {
   console.log(`server is listen on ${3000}`);
