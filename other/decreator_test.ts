@@ -1,8 +1,9 @@
 /*
-  @author：wyswill
-  @date:2020/8/10--下午3:06
-  @description:描述
-*/
+ * @LastEditors: wyswill
+ * @Description:  ts装饰器练习
+ * @Date: 2020-08-17 09:36:02
+ * @LastEditTime: 2020-08-24 13:49:01
+ */
 class Router {
   routes: string[] = [];
 
@@ -29,9 +30,9 @@ class Test {
 //类的装饰器参数为该类的构造函数，类的装饰器在初始化之前调用，在所有装饰器中最后一个调用
 function classDecorator() {
   return <T extends { new(...ares: any[]): {} }>(constructor: T) => {
+
+
     return class extends constructor {
-      haha: string = "asd";
-      were: number = 123123;
     };
   };
 }
