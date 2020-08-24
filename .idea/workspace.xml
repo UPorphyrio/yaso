@@ -26,9 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50259ca6-0970-4dc0-be01-b64ae898ee92" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/util/util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/util.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,12 +210,8 @@
     <configuration name="main.ts" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js" nameIsGenerated="true" path-to-js-file="src/main.ts" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="test.ts" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js" nameIsGenerated="true" path-to-js-file="src/test.ts" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="HTTP 请求.nest#1" />
-      <item itemvalue="Node.js.test.ts" />
       <item itemvalue="Node.js.main.ts" />
     </list>
     <recent_temporary>
@@ -234,7 +230,7 @@
       <updated>1597117598066</updated>
       <workItem from="1597117599180" duration="1446000" />
       <workItem from="1598256488558" duration="5638000" />
-      <workItem from="1598262866223" duration="1261000" />
+      <workItem from="1598262866223" duration="2572000" />
     </task>
     <task id="LOCAL-00001" summary="asdf">
       <created>1598257284966</created>
@@ -306,10 +302,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="687" y="169" key="#TypeScript/0.0.1920.1080@0.0.1920.1080" timestamp="1597117642796" />
-    <state x="423" y="201" width="1115" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597125576466">
+    <state x="423" y="201" width="1115" height="726" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598265323765">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="423" y="201" width="1115" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597125576466" />
+    <state x="423" y="201" width="1115" height="726" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598265323765" />
     <state x="380" y="73" width="930" height="907" key="CommitChangelistDialog2" timestamp="1598262380446">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -3,3 +3,10 @@ type tourerItem = {
   post?: Function;
 }
 
+type queryRes = {
+  [index: string]: any
+}
+type urlPresRes = {
+  path: string;
+  queryRes
+}
