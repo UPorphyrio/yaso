@@ -1,6 +1,7 @@
 ///<reference path="./types/index.d.ts" />
 import http, {IncomingMessage, Server, ServerResponse} from "http";
 import url from "url";
+import {urlPres} from "./util/util";
 
 const M_Router = new Map<string, tourerItem>();
 export const _server: Server = http.createServer();
@@ -9,6 +10,7 @@ _server.listen(3000, () => {
 });
 _server.on("request", (req: IncomingMessage, res: ServerResponse) => {
   const {pathname, query} = url.parse(req.url);
+  const urlItem = urlPres(pathname);
   const {method} = req;
   console.log(pathname);
   if (M_Router.has(pathname)) {
