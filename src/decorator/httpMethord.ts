@@ -1,19 +1,29 @@
 import main from "../main";
-import {ServerResponse} from "http";
 
 const {M_Router} = main;
 
+function methodRegister(cons: any, path: string, name: string, method: 'get' | 'post') {
+  const className = cons.constructor.name;//拿到该方法的类的名称
+  path = `/${className}${path}`;
+  if (M_Router.has(path)) {
+    const item = M_Router.get(path)
+    item.get = cons[name];
+    M_Router.set(path, item);
+    M_Router.set(path, cons[name])
+  } else M_Router.set(path, {[method]: cons[name]}); //拿到对应路由的实体方法
+  console.log(M_Router);
+}
+
 export function Get(path: string) {
   return (cons: any, name: string) => {
-    const className = cons.constructor.name;//拿到该方法的类的名称
-    path = `/${className}${path}`;
-    if (M_Router.has(path)) {
-      throw new Error(`the M_Router path: ${path} has ben used! pleas recheck code.`);
-    } else {
-      M_Router.set(path, cons[name]); //拿到对应路由的实体方法
-    }
-    console.log(M_Router);
+    methodRegister(cons, path, name, 'get');
   };
+}
+
+export function Post(path: string) {
+  return (cons: any, name: string) => {
+    methodRegister(cons, path, name, 'post');
+  }
 }
 
 /**
@@ -26,7 +36,7 @@ export function Route(path?: string) {
     let {name} = constructor;
     name = path ? path : name;
     if (!M_Router.has(`/${name}`)) {
-      M_Router.set(`/${name}`, () => name);
+      M_Router.set(`/${name}`, {get: () => name, post: () => name});
     }
   };
 }

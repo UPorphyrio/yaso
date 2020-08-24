@@ -1,4 +1,4 @@
-GET http://localhost:3000/Login
+POST http://localhost:3000/Login
 Accept: application/json
 
 ###
