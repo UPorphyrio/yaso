@@ -16,7 +16,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  contains:
+  container:
     image: node:12
   # This workflow contains a single job called "build"
   build:
