@@ -1,10 +1,11 @@
-import main from "../main";
-import RouterItem from "../modules/RouterItem";
-import {SceneRoute} from "../types";
-import routerManager from "../modules/routerManager";
+import { routerManager } from "../main";
 
-const {M_Router} = main;
-
+/*
+ * @LastEditors: wyswill
+ * @Description: 文件描述
+ * @Date: 2020-08-24 19:05:07
+ * @LastEditTime: 2020-08-25 15:04:12
+ */
 function methodRegister(cons: any, path: string, name: string, method: 'get' | 'post') {
   const className = cons.constructor.name;//拿到该方法的类的名称
   const item = routerManager.getItem(className, path);
