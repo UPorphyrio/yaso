@@ -26,7 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50259ca6-0970-4dc0-be01-b64ae898ee92" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/RouterItem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/routerManager.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/decreator_test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/other/decreator_test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorator/httpMethord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/httpMethord.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/util.ts" afterDir="false" />
     </list>
@@ -79,7 +84,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="rest.client.default.execution.environment" value="dev" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -200,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.main.ts">
+  <component name="RunManager" selected="Node.js.test">
     <configuration name="nest#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/nest.http" runType="运行单个请求">
       <method v="2" />
     </configuration>
@@ -210,9 +215,13 @@
     <configuration name="main.ts" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js" nameIsGenerated="true" path-to-js-file="src/main.ts" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="test" type="NodeJSConfigurationType" path-to-node="/usr/local/lib/node_modules/ts-node/dist/bin.js" path-to-js-file="decreator_test.ts" working-dir="$PROJECT_DIR$/other">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="HTTP 请求.nest#1" />
       <item itemvalue="Node.js.main.ts" />
+      <item itemvalue="Node.js.test" />
     </list>
     <recent_temporary>
       <list>
@@ -231,6 +240,8 @@
       <workItem from="1597117599180" duration="1446000" />
       <workItem from="1598256488558" duration="5638000" />
       <workItem from="1598262866223" duration="2572000" />
+      <workItem from="1598320763239" duration="27000" />
+      <workItem from="1598320799263" duration="9347000" />
     </task>
     <task id="LOCAL-00001" summary="asdf">
       <created>1598257284966</created>
@@ -302,10 +313,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="687" y="169" key="#TypeScript/0.0.1920.1080@0.0.1920.1080" timestamp="1597117642796" />
-    <state x="423" y="201" width="1115" height="726" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598265323765">
+    <state x="423" y="201" width="1115" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598322206318">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="423" y="201" width="1115" height="726" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598265323765" />
+    <state x="423" y="201" width="1115" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598322206318" />
     <state x="380" y="73" width="930" height="907" key="CommitChangelistDialog2" timestamp="1598262380446">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -314,22 +325,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="746" y="301" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1597125342423" />
-    <state width="1876" height="276" key="GridCell.Tab.0.bottom" timestamp="1598262497853">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1598324710657">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1598262497853" />
-    <state width="1876" height="276" key="GridCell.Tab.0.center" timestamp="1598262497853">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1598324710657" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1598324710656">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1598262497853" />
-    <state width="1876" height="276" key="GridCell.Tab.0.left" timestamp="1598262497852">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1598324710656" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1598324710655">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1598262497852" />
-    <state width="1876" height="276" key="GridCell.Tab.0.right" timestamp="1598262497853">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1598324710655" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1598324710657">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="276" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1598262497853" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1598324710657" />
     <state x="192" y="97" key="MergeDialog" timestamp="1598257165549">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -342,6 +353,10 @@
       <screen x="40" y="23" width="1880" height="1057" />
     </state>
     <state x="519" y="190" key="SettingsEditor/40.23.1880.1057@40.23.1880.1057" timestamp="1598257870275" />
+    <state width="500" height="446" key="SwitcherDM" timestamp="1598335361781">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="500" height="446" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1598335361781" />
     <state x="560" y="267" key="Vcs.Push.Dialog.v2" timestamp="1598262381569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

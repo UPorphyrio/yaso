@@ -1,21 +1,20 @@
 ///<reference path="./types/index.d.ts" />
 import http, {IncomingMessage, Server, ServerResponse} from "http";
-import url from "url";
 import {urlPres} from "./util/util";
+import { SceneRoute } from "./types";
 
-const M_Router = new Map<string, tourerItem>();
+const M_Router = new Map<string, SceneRoute>();
 export const _server: Server = http.createServer();
 _server.listen(3000, () => {
   console.log(`server is listen on ${3000}`);
 });
 _server.on("request", (req: IncomingMessage, res: ServerResponse) => {
-  const {pathname, query} = url.parse(req.url);
-  const urlItem = urlPres(pathname);
+  const {pathname, queryRes} = urlPres(req.url);
   const {method} = req;
-  console.log(pathname);
   if (M_Router.has(pathname)) {
-    const fn = M_Router.get(pathname)[method.toLocaleLowerCase()];
-    res.write(fn());
+    // const item: RouterItem = M_Router.get(pathname);
+    // res.write(item[method.toLocaleLowerCase()](queryRes));
+    // res.writeHead()
   } else res.write("the server is not found");
   res.end();
 });

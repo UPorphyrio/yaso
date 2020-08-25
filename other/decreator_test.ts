@@ -4,6 +4,8 @@
  * @Date: 2020-08-17 09:36:02
  * @LastEditTime: 2020-08-24 13:49:01
  */
+import "reflect-metadata";
+
 class Router {
   routes: string[] = [];
 
@@ -23,7 +25,7 @@ class Test {
   }
 
   @funcDecretor()
-  ha() {
+  ha(@query adsf) {
   }
 }
 
@@ -46,4 +48,10 @@ function funcDecretor() {
 
 let t = new Test();
 t.sey();
-t.ha();
+t.ha('asdf');
+
+function query(cons: Object, name: string, index: number) {
+  console.log(cons[name]);
+  // console.log({cons, name, index})
+}
+

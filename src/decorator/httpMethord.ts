@@ -1,16 +1,15 @@
 import main from "../main";
+import RouterItem from "../modules/RouterItem";
+import {SceneRoute} from "../types";
+import routerManager from "../modules/routerManager";
 
 const {M_Router} = main;
 
 function methodRegister(cons: any, path: string, name: string, method: 'get' | 'post') {
   const className = cons.constructor.name;//拿到该方法的类的名称
-  path = `/${className}${path}`;
-  if (M_Router.has(path)) {
-    const item = M_Router.get(path)
-    item[method] = cons[name];
-    M_Router.set(path, item);
-  } else M_Router.set(path, {[method]: cons[name]}); //拿到对应路由的实体方法
-  console.log(M_Router);
+  const item = routerManager.getItem(className, path);
+  item[method] = cons[name];
+  routerManager.setItem(className, path, item)
 }
 
 export function Get(path: string) {
@@ -34,7 +33,7 @@ export function Route(path?: string) {
   return <T extends { new(...ares: any[]): {} }>(constructor: T) => {
     let {name} = constructor;
     name = path ? path : name;
-    M_Router.set(`/${name}/`, {get: () => name, post: () => name});
-    console.log(M_Router);
+    routerManager.getItem(name, '/');
+    console.log(routerManager.getMRouter())
   };
 }

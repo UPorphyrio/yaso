@@ -1,12 +1,11 @@
-type tourerItem = {
-  get?: Function;
-  post?: Function;
-}
+import RouterItem from "../modules/RouterItem";
 
 type queryRes = {
-  [index: string]: any
+  [index: string]: object
 }
 type urlPresRes = {
-  path: string;
+  pathname: string;
   queryRes
 }
+
+type SceneRoute = Map<string, RouterItem>
