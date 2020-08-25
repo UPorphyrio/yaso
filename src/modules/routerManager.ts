@@ -1,8 +1,8 @@
 /*
  * @LastEditors: wyswill
- * @Description: 文件描述
+ * @Description: 路由管理
  * @Date: 2020-08-25 11:45:15
- * @LastEditTime: 2020-08-25 15:10:55
+ * @LastEditTime: 2020-08-25 15:18:22
  */
 import { SceneRoute } from "../types";
 import RouterItem from "./RouterItem";
@@ -15,15 +15,12 @@ export default class RouterManager {
   getMRouter() {
     return this.M_Router;
   }
-
   hasMainPath(path: string): boolean {
     return this.M_Router.has(path);
   }
-
   getSecedeItem(path: string): Map<string, RouterItem> {
     return this.M_Router.get(path);
   }
-
   getItem(firstPath: string, secedePath: string): RouterItem {
     if (this.M_Router.has(firstPath)) {
       if (this.M_Router.get(firstPath).has(secedePath)) return this.M_Router.get(firstPath).get(secedePath);
@@ -40,12 +37,10 @@ export default class RouterManager {
       return r;
     }
   }
-
   setItem(firstPath: string, secedePath: string, item: RouterItem) {
     this.getItem(firstPath, secedePath);
     this.M_Router.get(firstPath).set(secedePath, item);
   }
-
   createRouterItem(name: string): RouterItem {
     const item = new RouterItem();
     item.post = () => name;

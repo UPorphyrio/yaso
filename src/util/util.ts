@@ -2,7 +2,7 @@
  * @LastEditors: wyswill
  * @Description: 工具文件
  * @Date: 2020-08-24 19:05:07
- * @LastEditTime: 2020-08-25 15:10:06
+ * @LastEditTime: 2020-08-25 15:18:37
  */
 import url from "url";
 import { urlPresRes } from "../types";
@@ -34,5 +34,3 @@ export function urlPres(urlStr: string): urlPresRes {
   //处理路径
   return { pathname, queryRes, firstPath, secendPath };
 }
-
-urlPres("/asdf123/zxcvzxcv/asdf/asdfasdf");
