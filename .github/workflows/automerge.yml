@@ -2,7 +2,7 @@ name: autoMerge
 
 on:
   push
-  -branches: 
+  - branches: 
     - wyswill_dev
     - master
 jobs:
