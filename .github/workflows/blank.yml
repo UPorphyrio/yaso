@@ -1,4 +1,4 @@
-name: CI
+name: aruoMerge
 on:
   push:
     branches:
