@@ -31,9 +31,9 @@ test.*
 
 test/
 
-node_modules/
+/node_modules/
 
-.idea/*
+/.idea/*
 
 .vscode/
 
@@ -42,3 +42,4 @@ __pycache__/
 # Environments
 
 .env
+.idea/workspace.xml

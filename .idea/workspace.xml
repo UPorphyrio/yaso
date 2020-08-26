@@ -25,12 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50259ca6-0970-4dc0-be01-b64ae898ee92" name="默认更改列表" comment="参数解析">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorator/httpMethord.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/httpMethord.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/util.ts" afterDir="false" />
-    </list>
+    <list default="true" id="50259ca6-0970-4dc0-be01-b64ae898ee92" name="默认更改列表" comment="参数解析" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,6 +237,7 @@
       <workItem from="1598262866223" duration="2572000" />
       <workItem from="1598320763239" duration="27000" />
       <workItem from="1598320799263" duration="9980000" />
+      <workItem from="1598341182985" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="asdf">
       <created>1598257284966</created>
