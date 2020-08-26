@@ -15,6 +15,6 @@ jobs:
         id: merge
         with:
           github_token: ${{ secrets.AUTO_MERGE  }}
-          source: 'master'
-          target: 'release'
+          source: 'wyswill_dev'
+          target: 'master'
           webhook_url: #if present add the Slack webhook
