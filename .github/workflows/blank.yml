@@ -18,4 +18,3 @@ jobs:
           github_token: '9c75da5dc7d1220f1652e75e43db21930d7d244c'
           source: 'wyswill_dev'
           target: 'master'
-          webhook_url: #if present add the Slack webhook
