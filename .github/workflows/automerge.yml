@@ -2,9 +2,9 @@ name: autoMerge
 
 on:
   push
-  - branches: 
-    - wyswill_dev
-    - master
+    - branches: 
+      - wyswill_dev
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
