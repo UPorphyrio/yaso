@@ -6,11 +6,16 @@ on:
       - master
 jobs:
   update-cms-master:
-    name: aruoMerge
+    name: Merge master into release after a PR is merged
     runs-on: ubuntu-latest
     steps:
-      - name: Action-Automerge
-      uses: mtanzi/action-automerge@v1
-      with:
-        source: "wyswill_dev"
-        target: "master"
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: merge
+        uses: mtanzi/action-automerge@v1
+        id: merge
+        with:
+          github_token: ${{ github.token }}
+          source: 'wyswill_dev'
+          target: 'master'
+          webhook_url: #if present add the Slack webhook
