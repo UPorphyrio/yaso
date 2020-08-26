@@ -5,7 +5,7 @@ on:
       - wyswill_dev
 jobs:
   update-cms-master:
-    name: Merge master into release after a PR is merged
+    name: aruoMerge
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -17,4 +17,3 @@ jobs:
           github_token: ${{ secrets.AUTO_MERGE  }}
           source: 'wyswill_dev'
           target: 'master'
-          webhook_url: #if present add the Slack webhook
