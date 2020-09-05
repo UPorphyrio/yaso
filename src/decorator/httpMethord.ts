@@ -1,3 +1,9 @@
+/*
+ * @LastEditors: wyswill
+ * @Description: 文件描述
+ * @Date: 2020-08-26 12:20:09
+ * @LastEditTime: 2020-08-31 17:49:39
+ */
 import main from "../main";
 import { ServerResponse } from "http";
 
@@ -5,7 +11,7 @@ const { M_Router } = main;
 
 export function Get(path: string) {
   return (cons: any, name: string) => {
-    const className = cons.constructor.name;//拿到该方法的类的名称
+    const className = cons.constructor.name; //拿到该方法的类的名称
     path = `/${className}${path}`;
     if (M_Router.has(path)) {
       throw new Error(`the M_Router path: ${path} has ben used! pleas recheck code.`);
@@ -22,7 +28,7 @@ export function Get(path: string) {
  * @constructor
  */
 export function Route(path?: string) {
-  return <T extends { new(...ares: any[]): {} }>(constructor: T) => {
+  return <T extends { new (...ares: any[]): {} }>(constructor: T) => {
     let { name } = constructor;
     name = path ? path : name;
     if (!M_Router.has(`/${name}`)) {

@@ -1,0 +1,16 @@
+name: autoMerge
+
+on:
+  push
+    - branches: 
+      - wyswill_dev
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: merge
+      run: git merge wyswill_dev
+    - name: push
+      run: git push origin master  
