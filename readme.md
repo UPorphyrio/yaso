@@ -1,8 +1,12 @@
-# yaso 基于typescript的轻量级node.js去中心化http框架
+# yaso 
+>
+>基于typescript的轻量级node.js去中心化http框架
+>
+---
 
 > 基本思想：结合mvc模式思想，将整个流程分为：`router层`、`服务层`、`数据库层`。
 
-#### router层
+## router层
 
 ```flow
 start=>start: 开始
@@ -33,6 +37,14 @@ precess=>operation: 将路由路径拿到对应的处理函数
 
 startReq->pressUrl
 ```
+
+## DOCS
+[docs](https://uporphyrio.github.io/yaso/)
+
+
+## LICNESE
+
+[GPL](LICENSE)
 
 
 
