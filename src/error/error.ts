@@ -53,6 +53,6 @@ enum YasoErrorCode{
 
 declare class YasoError extends Error{
     constructor();
-    code:YasoErrorCode;
+    codes:YasoErrorCode;
 }
 
