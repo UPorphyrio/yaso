@@ -3,7 +3,8 @@ interface DataBaseConfig{
     host:string
     table?:string
 }
-
+import mysql from "mysql";
+import mongoose from "mongoose";
 class database{
     connect:Object;
     static sql(config:DataBaseConfig):void{

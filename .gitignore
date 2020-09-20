@@ -41,6 +41,7 @@ __pycache__/
 
 *.sublime-workspace
 
+author
 # Environments
 
 .env
