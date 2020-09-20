@@ -39,6 +39,9 @@ node_modules/
 
 __pycache__/
 
+*.sublime-workspace
+
+author
 # Environments
 
 .env

@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    - branches:
+      - wyswill_dev
+      - jin_dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: |
+          npm install
+          npm install typescript mysql mongoose
+          npm dev
+

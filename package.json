@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon example/main.ts"
+    "dev": "node_modules/typescript/bin/tsc example/main.ts"
   },
   "keywords": [],
   "author": "wyswill",

@@ -1,0 +1,27 @@
+# running
+#
+
+sudo: true
+
+language: node_js
+
+node_js:
+  - 12
+
+install:
+  - npm install typescript
+  - npm install
+
+script:
+  - npm run test
+
+cache:
+  directories:
+    - node_modules
+
+after_script:
+
+
+branches:
+  - only:
+    - master
